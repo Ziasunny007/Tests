@@ -1,0 +1,90 @@
+<html>
+<head>
+<style type="text/css" id="branch-css">
+/* Resets default margins and padding to ensure consistency across browsers.*/
+</style>
+
+<style type="text/css" id="branch-iframe-css">
+#branch-banner-iframe {
+  top: 0;
+  right: 0;
+  border: 0;
+  height: 100vh;
+  z-index: 99999;
+  width: 45rem;
+  position: fixed;
+}
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+function unescapeHtml(escaped_str) {
+    var div = document.createElement('div');
+    div.innerHTML = escaped_str;
+    var child = div.childNodes[0];
+    return child ? child.nodeValue : null;
+}
+
+function validateProtocol(url) {
+    var parser = document.createElement('a');
+    parser.href = url;
+    var protocol = parser.protocol.toLowerCase();
+    if ([ 'javascript:', 'vbscript:', 'data:', 'ftp:', ':', ' '].indexOf(protocol) < 0) {
+        return url;
+    }
+    return null;
+}
+
+function validate(url) {
+    var unescaped_value = unescapeHtml(url);
+    if (unescaped_value && validateProtocol(unescaped_value)) {
+        return unescaped_value;
+    }
+    return '/';
+}
+
+(function(root) {
+    var THRESHOLD = 5 * 1000;
+    var last_called = null;
+
+    var cta = function() {
+        var now = +new Date();
+        if ((last_called !== null) && (now - last_called < THRESHOLD)) {
+            return;
+        }
+        last_called = now;
+
+        // immediate_window
+        window.top.location = validate("https://guruhk-alternate.app.link/DiQaplsHQYb?__branch_flow_type=viewapp&__branch_flow_id=1525441470368253398&__branch_desktop_deepview_type=6&_branch_match_id=1517745644693918583&_t=1517745644693918583");
+    };
+
+    // callback_set
+    if (typeof branch_view_callback__1 === 'function') {
+        branch_view_callback__1(cta);
+    }
+
+})(window);
+</script>
+
+<script type="application/json">
+{
+  "language": {
+    "$journeys_button_get_has_app": "Start Booking Now",
+    "$journeys_button_get_no_app": "Start Booking Now",
+    "$journeys_description": "QR code",
+    "$journeys_banner_image_url": "https://cdn.branch.io/branch-assets/journeys/756994413330190699/center_overlay-new-1706044501988.jpg",
+    "$journeys_title": "Scan to download the app"
+  },
+  "position": "inject",
+  "ctaText": {
+    "has_app": "Start Booking Now",
+    "no_app": "Start Booking Now"
+  },
+  "injectorSelector": ""
+}
+</script>
+
+</body>
+</html>

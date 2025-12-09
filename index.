@@ -1,0 +1,8 @@
+https://api.pinterest.com/v5/ad_accounts/${ (ad_network.credentials.ad_account_id)! }/events
+
+
+
+https://api.pinterest.com/v5/ad_accounts/${ (ad_network.credentials.ad_account_id)! }/events
+
+
+https://api.pinterest.com/v5/ad_accounts/${ (ad_network.credentials.ad_account_id)! }/events

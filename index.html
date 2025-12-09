@@ -1,51 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CTA Button</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
-
-    .cta-button {
-      display: inline-block;
-      padding: 15px 30px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #0056b3;
-    }
-
-    .cta-button:active {
-      background-color: #00408d;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-  <a class="cta-button" href="https://open.airtelxstream.in/claimup" target="_blank" rel="noopener">
-    Click
-  </a>
-  <a class="cta-button" href="https://thei.to/?$ios_url=https://www.figma.com/" target="_blank" rel="noopener">
-    Click iconic
-  </a>
-  <a class="cta-button" href="https://h60eq.app.link/20251125_goodgoods_br_pr_line_letscelebrate1_carousel_lineho_nsc_omni_home_r1_c1" target="_blank" rel="noopener">
-    Click central
-  </a>
-
+    <h1>Journeys</h1>
 </body>
+<script>
+
+   // Load Branch
+         (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener banner closeBanner closeJourney data deepview deepviewCta first init link logout removeListener setBranchViewData setIdentity track trackCommerceEvent logEvent disableTracking getBrowserFingerprintId crossPlatformIds lastAttributedTouchData setAPIResponseCallback qrCode setRequestMetaData setAPIUrl getAPIUrl setDMAParamsForEEA".split(" "), 0);
+
+    // Replace key_live_YOUR_KEY_GOES_HERE with your Branch Key (live version)
+branch.init('key_live_jAozxBAhXn9NYeOS8Vj8BefnDxdempwR', function(err, data) {
+	console.log(err, data);
+});
+
+</script>
 </html>
